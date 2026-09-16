@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luis Fernando Peña Silva — Portafolio</title>
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <a href="#" class="logo">Luis Peña</a>
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <nav class="nav-links">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#proyectos">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+          <button class="theme-toggle" aria-label="Cambiar tema">&#127769;</button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Luis Fernando Peña Silva</h1>
+        <p>Desarrollador Web | Creador de soluciones digitales</p>
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="fade-in">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy un desarrollador web apasionado por crear experiencias digitales
+          modernas y funcionales. Me especializo en HTML5, CSS3 y JavaScript,
+          siempre buscando aprender nuevas tecnologías y mejorar mis habilidades
+          para ofrecer soluciones de calidad.
+        </p>
+        <div class="habilidades">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+          <span>Git</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="fade-in">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="proyectos-grid">
+          <article class="proyecto-card">
+            <div class="card-body">
+              <h3>Proyecto 1</h3>
+              <p>Sitio web responsivo con HTML5 y CSS3 moderno.</p>
+              <a href="#">Ver más &rarr;</a>
+            </div>
+          </article>
+          <article class="proyecto-card">
+            <div class="card-body">
+              <h3>Proyecto 2</h3>
+              <p>Aplicación interactiva desarrollada con JavaScript vanilla.</p>
+              <a href="#">Ver más &rarr;</a>
+            </div>
+          </article>
+          <article class="proyecto-card">
+            <div class="card-body">
+              <h3>Proyecto 3</h3>
+              <p>Landing page optimizada para dispositivos móviles.</p>
+              <a href="#">Ver más &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="fade-in">
+      <div class="container">
+        <h2>Contacto</h2>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="nombre" placeholder="Nombre" required />
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Email" required />
+            <span class="error-msg"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="mensaje" placeholder="Mensaje" required></textarea>
+            <span class="error-msg"></span>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+          <p class="form-message"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Luis Peña — Todos los derechos reservados</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
