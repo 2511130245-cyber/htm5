@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "SISACADEMICO_UNDC_PROYECTO",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.CustomBrowser": "chrome"
+	}
+}
