@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>API | Envío de Correos</title>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="api.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <div class="encabezado">
+            <span class="icono">✉</span>
+            <h1>Enviar correo</h1>
+            <p>Formulario de comunicación</p>
+        </div>
+
+        <form id="formulario">
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Ingresa tu nombre"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+
+            <div class="campo">
+                <label for="email">Correo electrónico</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="correo@ejemplo.com"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+
+                <textarea
+                    id="mensaje"
+                    placeholder="Escribe tu mensaje..."
+                    required
+                ></textarea>
+            </div>
+
+
+            <button type="submit" id="btnEnviar">
+
+                <span id="textoBoton">
+                    Enviar correo
+                </span>
+
+            </button>
+
+        </form>
+
+
+        <!-- Mensaje de JavaScript -->
+        <div id="mensajeEstado"></div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="api.js"></script>
+
+</body>
+
+</html>
